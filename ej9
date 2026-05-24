@@ -1,0 +1,20 @@
+/*Dado un número entero de 6 cifras, mostrar por separado uno debajo del otro los 6 símbolos que lo componen.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int sqctsp, s, q, c, t, sd, p;
+    printf("Ingresar un numero de 6 cifras para descomponer: ");
+    scanf("%d", &sqctsp);
+    s = sqctsp/100000;
+    q = (sqctsp%100000)/10000;
+    c = (sqctsp%10000)/1000;
+    t = (sqctsp%1000)/100;
+    sd = (sqctsp%100)/10;
+    p = sqctsp%10;
+    printf("\n%d\n%d\n%d\n%d\n%d\n%d", s, q, c, t, sd, p);
+    printf("\n");
+    system("pause");
+    return 0;
+}
