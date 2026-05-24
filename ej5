@@ -18,5 +18,7 @@ int main(){
     ent_mn = mnores*(200*0.55);
     ent_jb = jbilados*(200*0.30);
     total = ent_my+ent_mn+ent_jb;
-    printf("El importe a cobrar es %f$", total);
+    printf("El importe a cobrar es %.2f$", total);
+    printf("\n");
+    system("pause");
 }
