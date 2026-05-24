@@ -1,0 +1,14 @@
+/*Un supermercado decide donar a UNICEF el 1.75% de la facturación realizada en el día. Ingresado el importe total
+facturado calcular e informar el dinero a donar.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float importe;
+    printf("Ingrese el importe total facturado: ");
+    scanf("%f", &importe);
+    printf("El dinero a donar del importe ingresado es $%.2f", importe*0.0175);
+    printf("\n");
+    system("pause");
+}
