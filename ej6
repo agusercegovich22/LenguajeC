@@ -18,4 +18,5 @@ int main(){
     printf("El precio total es $%.2d. Se cobraron %d maples, %d docenas y %d huevos sueltos", precio, maple, docena, unidad);
     printf("\n");
     system("pause");
+    return 0;
 }
