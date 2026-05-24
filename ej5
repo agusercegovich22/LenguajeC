@@ -21,4 +21,5 @@ int main(){
     printf("El importe a cobrar es %.2f$", total);
     printf("\n");
     system("pause");
+    return 0;
 }
