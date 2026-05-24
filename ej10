@@ -1,0 +1,18 @@
+/*Una farmacia vende algunos artículos sin descuento y a otros con descuento del 20%. Confeccionar un programa que
+recibiendo el precio original y un código que indica si es o no con descuento, informe el precio final (0 no aplica el
+descuento y 1 aplica el descuento).*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float precio, descuento, precio_final;
+    printf("Ingrese el precio del articulo: ");
+    scanf("%f", &precio);
+    printf("Escriba 1 si posee descuento o 0 en caso contrario: ");
+    scanf("%f", &descuento);
+    precio_final = precio-precio*.20*descuento;
+    printf("Precio final: $%.2f\n", precio_final);
+    system("pause");
+    return 0;
+}
