@@ -1,0 +1,19 @@
+/*Se ingresa un número entero de 8 cifras que representa una fecha en formato AAAAMMDD. Se desea cambiar el orden
+de los dígitos que dicho número generando un nuevo número entero en formato DDMMAAAA y mostrarlo.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int AAAAMMDD, anio, mes, dia, DDMMAAAA;
+    printf("Ingresar fecha en formato AAAAMMDD: ");
+    scanf("%d", &AAAAMMDD);
+    anio = AAAAMMDD/10000;
+    mes = (AAAAMMDD%10000)/100;
+    dia = AAAAMMDD%100;
+    DDMMAAAA = dia*1000000 + mes*10000 + anio;
+    printf("Formato DDMMAAAA: %d", DDMMAAAA);
+    printf("\n");
+    system("pause");
+    return 0;
+}
