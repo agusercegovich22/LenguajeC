@@ -11,4 +11,5 @@ int main(){
     printf("El dinero a donar del importe ingresado es $%.2f", importe*0.0175);
     printf("\n");
     system("pause");
+    return 0;
 }
