@@ -1,0 +1,22 @@
+/*Se debe realizar un sistema para calcular el monto a abonar para ingresar en un parque de diversiones. La entrada
+para mayores vale $200, a los menores se le cobra un 45% menos y a los jubilados un 70% menos. Se ingresa la
+cantidad de entradas de mayores, menores y jubilados. Calcular y mostrar el importe a cobrar. Sino se venden entradas
+de un tipo se ingresa cero.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float myores=0, mnores=0, jbilados=0, ent_my, ent_mn, ent_jb, total;
+    printf("Ingresar la cantidad de entradas para mayores: ");
+    scanf("%f", &myores);
+    printf("Ingresar la cantidad de entradas para menores: ");
+    scanf("%f", &mnores);
+    printf("Ingresar la cantidad de entradas para jubilados: ");
+    scanf("%f", &jbilados);
+    ent_my = myores*200;
+    ent_mn = mnores*(200*0.55);
+    ent_jb = jbilados*(200*0.30);
+    total = ent_my+ent_mn+ent_jb;
+    printf("El importe a cobrar es %f$", total);
+}
