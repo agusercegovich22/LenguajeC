@@ -1,0 +1,20 @@
+/*Se ingresan los kilómetros realizados por un automóvil y el gasto de combustible en litros. Calcular e informar el
+consumo que tuvo el auto expresado en:
+a. Kilómetros que realizó por cada litro de combustible
+b. Litros de combustible consumidos cada 100 kilómetros*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float km, litros;
+    printf("Ingresar los km realizados por un automovil: ");
+    scanf("%f", &km);
+    printf("\nIngresar el gasto de combustible en litros: ");
+    scanf("%f", &litros);
+    printf("\nKilometros que realizo por cada litro de combustible: %fkm/l", km/litros);
+    printf("\n Litros de combustible consumidos cada 100km: %f", 100*(litros/km));
+    printf("\n");
+    system("pause");
+    return 0;
+}
