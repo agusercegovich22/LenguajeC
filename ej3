@@ -1,0 +1,20 @@
+/*Se ingresa el tiempo en horas que llevó realizar un viaje de avión y las millas recorridas. Informar la velocidad media
+en kilómetros por hora del trayecto. (1 milla = 1.60934 km)*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#define kmAm 1.60934
+
+int main(){
+    float t_viaje, millas, km, v_media;
+    printf("Ingrese el tiempo en horas que llevo realizar el viaje: ");
+    scanf("%f", &t_viaje);
+    printf("Ingrese las millas recorridas: ");
+    scanf("%f", &millas);
+    km = millas*kmAm;
+    v_media = km/t_viaje;
+    printf("La velocidad media del viaje fue de: %fkm/h", v_media);
+    printf("\n");
+    system("pause");
+    return 0;
+}
