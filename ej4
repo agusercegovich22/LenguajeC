@@ -1,0 +1,18 @@
+/*Se ingresa por teclado un número entero de 5 cifras. Partiendo de este generar un nuevo número entero que esté
+formado por los 3 dígitos centrales y mostrarlo. Por ejemplo si el número es 65783 debe mostrar el número 578.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int num, n2, n_final;
+    printf("Ingrese un numero entero de 5 cifras: ");
+    scanf("%d", &num);
+    n2 = num/10;
+    n_final= n2%1000;
+    printf("Numero formado por los 3 digitos centrales: %d", n_final);
+    printf("\n");
+    system("pause");
+    return 0;
+}
