@@ -1,0 +1,21 @@
+/*Una granja vende huevos. Si son sueltos cada uno vale $2, por docena se venden a $20 y el maple de 30 huevos sale
+$40. Se ingresa la cantidad de huevos que se desea comprar. Calcular e informar el precio total a pagar detallando
+cuantos maples se cobraron, cuantas docenas y cuantos huevos sueltos.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int huevos = 0, maple, docena, unidad, resto, precio;
+    printf("Ingrese la cantidad de huevos que desea comprar: ");
+    scanf("%d", &huevos);
+    maple = huevos/30;
+    resto = huevos%30;
+    docena = resto/12;
+    unidad = resto - docena*12;
+    precio = maple*40 + docena*20 + unidad*2;
+    printf("El precio total es $%.2d. Se cobraron %d maples, %d docenas y %d huevos sueltos", precio, maple, docena, unidad);
+    printf("\n");
+    system("pause");
+}
