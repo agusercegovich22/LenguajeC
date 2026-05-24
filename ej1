@@ -1,0 +1,19 @@
+/*Ingresar por teclado dos números. Calcular y mostrar la suma, la resta, la multiplicación y el cociente.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n1, n2;
+    printf("Ingresar primer numero; ");
+    scanf("%d", &n1);
+    printf("\nIngresar segundo numero; ");
+    scanf("%d", &n2);
+    printf("\nLa suma es: %d", n1+n2);
+    printf("\nLa resta es: %d", n1-n2);
+    printf("\nLa multiplicacion es: %d", n1*n2);
+    printf("\nLa division es: %d", n1/n2);
+    printf("\n");
+    system("pause");
+    return 0;
+}
